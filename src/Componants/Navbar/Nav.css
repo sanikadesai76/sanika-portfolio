@@ -12,13 +12,13 @@ body.light-mode {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 60px;
+  padding: 12px 60px;
   font-family: "Poppins", sans-serif;
   background-color: transparent;
 }
 
 .navbar h1 {
-  font-size: 28px;
+  font-size: 30px;
 }
 
 .navbar h1 span {
@@ -29,12 +29,12 @@ body.light-mode {
 .nav-right {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 60px;
 }
 
 .navbar nav ul {
   display: flex;
-  gap: 80px;
+  gap: 90px;
   list-style: none;
 }
 
