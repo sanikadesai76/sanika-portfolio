@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { BsMoon, BsSun } from "react-icons/bs";
+import { Link } from "react-scroll";
 import "./Nav.css";
 
 const Nav = () => {
@@ -17,22 +18,54 @@ const Nav = () => {
 
       <div className="nav-right">
         <button className="mode-toggle" onClick={() => setDarkMode(!darkMode)}>
-          {darkMode ? <BsSun size={15} /> : <BsMoon size={15} />}
+          {darkMode ? <BsSun size={12} /> : <BsMoon size={12} />}
         </button>
 
         <nav>
           <ul>
             <li>
-              <a href="#">Home</a>
+              <Link
+                to="home"
+                smooth={true}
+                duration={500}
+                offset={-60}
+                spy={true}
+              >
+                Home
+              </Link>
             </li>
             <li>
-              <a href="#about">About</a>
+              <Link
+                to="about"
+                smooth={true}
+                duration={500}
+                offset={-100}
+                spy={true}
+              >
+                About
+              </Link>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <Link
+                to="projects"
+                smooth={true}
+                duration={500}
+                offset={-60}
+                spy={true}
+              >
+                Projects
+              </Link>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <Link
+                to="contact"
+                smooth={true}
+                duration={500}
+                offset={-60}
+                spy={true}
+              >
+                Contact
+              </Link>
             </li>
           </ul>
         </nav>

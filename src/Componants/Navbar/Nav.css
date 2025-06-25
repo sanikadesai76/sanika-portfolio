@@ -12,9 +12,12 @@ body.light-mode {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 60px;
+  padding: 12px 50px;
   font-family: "Poppins", sans-serif;
   background-color: transparent;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar h1 {
@@ -48,6 +51,7 @@ body.light-mode {
   transition: all 0.3s ease;
 }
 
+/* underline on hover and active */
 .navbar nav ul li a::after {
   content: "";
   position: absolute;
@@ -59,8 +63,15 @@ body.light-mode {
   transition: width 0.3s ease;
 }
 
-.navbar nav ul li a:hover::after {
+/* Hover and scroll (active) effect */
+.navbar nav ul li a:hover::after,
+.navbar nav ul li a.active::after {
   width: 100%;
+}
+
+/* Color change for active link */
+.navbar nav ul li a.active {
+  color: #4f88ff;
 }
 
 /* Toggle Mode Button */
