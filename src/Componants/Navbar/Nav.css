@@ -63,17 +63,6 @@ body.light-mode {
   transition: width 0.3s ease;
 }
 
-/* Hover and scroll (active) effect */
-.navbar nav ul li a:hover::after,
-.navbar nav ul li a.active::after {
-  width: 100%;
-}
-
-/* Color change for active link */
-.navbar nav ul li a.active {
-  color: #4f88ff;
-}
-
 /* Toggle Mode Button */
 .mode-toggle {
   background: none;
