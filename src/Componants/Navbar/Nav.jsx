@@ -39,10 +39,21 @@ const Nav = () => {
                 to="about"
                 smooth={true}
                 duration={500}
-                offset={-100}
+                offset={-60}
                 spy={true}
               >
                 About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="education"
+                smooth={true}
+                duration={500}
+                offset={-60}
+                spy={true}
+              >
+                Education
               </Link>
             </li>
             <li>

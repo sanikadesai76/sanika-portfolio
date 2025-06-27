@@ -1,7 +1,9 @@
 import About from "./Componants/Navbar/About";
+import Experience from "./Componants/Navbar/Experience";
 import Home from "./Componants/Navbar/Home";
 import Nav from "./Componants/Navbar/Nav";
 import { Element } from "react-scroll";
+import Project from "./Componants/Navbar/Project";
 
 function App() {
   return (
@@ -14,6 +16,14 @@ function App() {
 
       <Element name="about">
         <About />
+      </Element>
+
+      <Element name="education">
+        <Experience />
+      </Element>
+
+      <Element name="projects">
+        <Project />
       </Element>
     </>
   );

@@ -14,14 +14,14 @@ body.light-mode {
   align-items: center;
   padding: 12px 50px;
   font-family: "Poppins", sans-serif;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 .navbar h1 {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .navbar h1 span {
@@ -32,12 +32,12 @@ body.light-mode {
 .nav-right {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 40px;
 }
 
 .navbar nav ul {
   display: flex;
-  gap: 90px;
+  gap: 60px;
   list-style: none;
 }
 
@@ -49,9 +49,9 @@ body.light-mode {
   position: relative;
   padding-bottom: 4px;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-/* underline on hover and active */
 .navbar nav ul li a::after {
   content: "";
   position: absolute;
@@ -61,6 +61,10 @@ body.light-mode {
   left: 0;
   background-color: #4f88ff;
   transition: width 0.3s ease;
+}
+
+.navbar nav ul li a:hover::after {
+  width: 100%;
 }
 
 /* Toggle Mode Button */

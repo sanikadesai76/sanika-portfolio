@@ -64,12 +64,12 @@
 }
 
 .skill-card {
+  background-color: #161b22;
   background-color: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
   padding: 0.8rem 2rem;
   border-radius: 10px;
-  transition: background-color 0.3s ease, color 0.3s ease;
   border: 1px solid rgba(88, 166, 255, 0.3);
-  background-color: #161b22;
   box-shadow: none;
   padding-top: 2px;
 }

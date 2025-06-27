@@ -11,9 +11,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: calc(
-    100vh - 80px
-  ); /* Ensures it fits the screen minus navbar height */
+  min-height: calc(100vh - 80px);
 }
 
 body.dark .home-section {

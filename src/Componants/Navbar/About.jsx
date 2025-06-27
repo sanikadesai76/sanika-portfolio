@@ -31,7 +31,7 @@ const About = () => {
 
         {/* Right Side: Skills */}
         <div className="about-right">
-          <h3>My Skills</h3>
+          <h3>Technical Skills</h3>
           <div className="skills-grid">
             <div className="skill-card">
               <h4>Frontend</h4>
