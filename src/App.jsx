@@ -5,6 +5,7 @@ import Nav from "./Componants/Navbar/Nav";
 import { Element } from "react-scroll";
 import Project from "./Componants/Navbar/Project";
 import Blog from "./Componants/Navbar/blog";
+import Achievement from "./Componants/Navbar/Achievement";
 
 function App() {
   return (
@@ -29,6 +30,10 @@ function App() {
 
       <Element name="projects">
         <Blog />
+      </Element>
+
+      <Element name="projects">
+        <Achievement />
       </Element>
     </>
   );
